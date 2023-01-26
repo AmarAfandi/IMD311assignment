@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+</head>
+    <style>
+        body {
+            background-image: url(./images/HonoredSlowGemsbok-size_restricted.gif);
+            background-size: cover;
+        }
+    </style>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>
+            <font style="color: #00c3ff ;">AMAR</font><font style="color: red;">AFANDI</font>
+            </h1>
+        </div>
+        <ul>
+            <li id="active"><a href="#" >Home</a></li>
+            <li><a href="./biodata.html">Biodata</a></li>
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <img src="./images/amar.png" width="450">
+        <span></span>
+        <p>Welcome to my <i style="color: #00c3ff;">WEBSITE</i>
+            <br>
+        <font style="font-size: 20px;">This website for assignment <font style="color:tomato">IMD311</font>
+        <br><font style="font-size: 25px;">Prepared for <u>Madam Seri Intan Idayu</u></font></font></p>
+        <div class="digital-clock"></div>
+    </div>
+
+
+    <script>
+        setInterval (()=>{
+            const time = document.querySelector(".digital-clock");
+            let date = new Date();
+            let hours =date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+            let AM_PM = "AM";
+
+            if (hours > 11) {
+                AM_PM = "PM";
+                hours = hours - 12;
+            }
+                if (hours == 0) {
+                    hours = 12;
+            }   
+                if (seconds < 10) {
+                    seconds = "0" + seconds;
+            }
+                if (minutes < 10) {
+                    minutes = "0" + minutes;
+            }
+                if (hours < 10) {
+                    hours = "0" + hours;
+            }
+                time.textContent = hours + ":" + minutes + ":" + seconds + " " + AM_PM;
+            });
+</script>
+</body>
+</html>

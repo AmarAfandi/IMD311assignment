@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+</head>
+    <style>
+        body {
+            background-image: url(./images/9e8eb7dcefd04d1bd1a5230c11a3f5e9.gif);
+            background-size: cover;
+        }
+        .audio-box {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto 20px auto;
+            gap: 20px;
+        }
+        .gallery-container {
+            width: 1200px;
+            display: flex;
+            justify-content: baseline;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+    </style>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>
+            <font style="color: #00c3ff ;">AMAR</font><font style="color: red;">AFANDI</font>
+            </h1>
+        </div>
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="./biodata.html">Biodata</a></li>
+            <li><a href="./education.html">Education</a></li>
+            <li id="active"><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="audio-box">
+        <img src="./images/song.jpeg" alt="img-song" width="300">
+        <audio controls>
+            <source src="./audio/Big Bang - LET`S NOT FALL IN LOVE [129 kbps].mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <div class="gallery-container">
+        <a href="./images/IMG_20221207_183858.jpg" target="_blank"><img src="./images/IMG_20221207_183858.jpg" width="400" alt="img"></a>
+        <a href="./images/IMG_20221217_195457.jpg" target="_blank"><img src="./images/IMG_20221217_195457.jpg" width="400" alt="img"></a>
+        <a href="./images/IMG_20221217_200014.jpg" target="_blank"><img src="./images/IMG_20221217_200014.jpg" width="400" alt="img"></a>
+        <a href="./images/IMG_20221216_191051.jpg" target="_blank"><img src="./images/IMG_20221216_191051.jpg" width="400" alt="img"></a>
+        <a href="./images/IMG_20221214_192009.jpg" target="_blank"><img src="./images/IMG_20221214_192009.jpg" width="400" alt="img"></a>
+        <video width="400"  controls>
+            <source src="./videos/video2.mp4" type="video/mp4">
+        </video>
+        <video width="400" controls>
+            <source src="./videos/video1.mp4"  type="video/mp4">
+        </video>
+        <video width="400" controls>
+            <source src="./videos/video3.mp4"  type="video/mp4">
+        </video>
+        <video width="400" controls>
+            <source src="./videos/video4.mp4"  type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>
